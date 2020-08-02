@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+    stages {
+        stage('checkout repo') {
+                        steps {
+                                get url: 'https://github.com/rizzobrit/DevOpsClassCodes.git '
+             }
+        }
+        stage('build artifact') {
+                        steps {
+                               sh 'mvn package'
+              }
+        }
+        stage('build docker image') {
+                         steps {
+                                 sh 'docker build -t rizzobrit/addressbook .'
+              }
+        }
+        stage('push docker image') {
+                        steps {
+                                withCredentials([string(credentialsId: 'DOCKER_HUB_PWD', variable: 'DOCKER_HUB_PWD')]) {
+                sh "docker login -u rizzobrit -p ${DOCKER_HUB_PWD}"
+                              }
+                              sh 'docker push rizzobrit/addressbook'
+              }
+        }
+        stage('Deploy to k8s')
+                        steps {
+                               sh 'kubectl apply -f addressbook-deploy-k8s.yml'
+                               }
+              }
+        }
+    }
