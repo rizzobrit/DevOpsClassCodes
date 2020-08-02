@@ -7,7 +7,7 @@ metadata:
 spec:
   replicas: 2
   selector:
-    matchlabels:
+    matchLabels:
       app: addressbookapp
     template:
       metadata:
