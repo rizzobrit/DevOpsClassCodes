@@ -1,9 +1,9 @@
-apiversion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: addressbook
   labels:
-    app: addressbookapp
+    app: adressbookapp
 spec:
   replicas: 2
   selector:
@@ -12,13 +12,13 @@ spec:
   template:
     metadata:
       labels:
-        app: addressbookapp 
+        app: addressbookapp
     spec:
       containers:
       - name: addressbookapp
         image: rizzobrit/addressbook
         ports:
-          - containerPort: 8080
+        - containerPort: 8080
             
 ---
 
