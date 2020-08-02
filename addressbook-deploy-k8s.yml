@@ -9,15 +9,15 @@ spec:
   selector:
     matchLabels:
       app: addressbookapp
-    template:
-      metadata:
-        labels:
-          app: addressbookapp 
-        spec:
-          containers:
-          - name: addressbookapp
-            image: rizzobrit/addressbook
-            ports:
+  template:
+    metadata:
+      labels:
+        app: addressbookapp 
+    spec:
+      containers:
+        - name: addressbookapp
+          image: rizzobrit/addressbook
+          ports:
             - containerPort: 8080
             
 ---
