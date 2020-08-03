@@ -24,10 +24,11 @@ pipeline {
                               sh 'docker push rizzobrit/addressbook'
               }
         }
-        stage('Deploy to k8s')
+        stage('Deploy to k8s') {
                         steps {
                                sh 'kubectl apply -f addressbook-deploy-k8s.yml'
                                }
               }
         }
+}
   
