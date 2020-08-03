@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('checkout repo') {
                         steps {
-                                get url: 'https://github.com/rizzobrit/DevOpsClassCodes.git '
+                                git url: 'https://github.com/rizzobrit/DevOpsClassCodes.git '
              }
         }
         stage('build artifact') {
