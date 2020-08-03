@@ -1,0 +1,437 @@
+ 1  git clone https://github.com/rizzobrit/labs.git
+    2  sudo add-apt-repository ppa:openjdk-r/ppa
+    3  sudo apt-get update
+    4  sudo apt-get install -y openjdk-8-jdk
+    5  wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+    6  echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+    7  sudo apt-get update
+    8  sudo apt-get install jenkins
+    9  apt-get install jenkins
+   10  java --version
+   11  java -version
+   12  sudo apt-get update
+   13  sudo apt-get remove default-jre default-jdk
+   14  sudo apt-get update
+   15  sudo apt-get install default-jre default-jdk
+   16  sudo apt-get update
+   17  sudo apt-get upgrade
+   18  sudo add-apt-repository universe
+   19  sudo apt-get install jenkins
+   20  ls -l
+   21  cd labs
+   22  cd jenkins
+   23  sudo apt-get install jenkins
+   24  wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+   25  echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+   26  sudo apt-get update
+   27  sudo apt-get install jenkins
+   28  wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+   29  sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+   30  sudo apt-get update
+   31  sudo apt-get install jenkins
+   32  wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+   33  wget –q –O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add –
+   34  sudo nano /etc/apt/sources.list
+   35  sudo apt update
+   36  sudo apt install Jenkins
+   37  sudo nano /etc/apt/sources.list
+   38  sudo apt update
+   39  sudo nano /etc/apt/sources.list
+   40  sudo apt update
+   41  sudo systemctl status jenkins
+   42  apt install Jenkins
+   43  sudo nano /etc/apt/sources.list
+   44  apt install Jenkins
+   45  clear
+   46  sudo nano /etc/apt/sources.list
+   47  apt install Jenkins
+   48  sudo -H gedit /etc/apt/sources.list
+   49  sudoedit /etc/apt/source.list
+   50  sudo nano /etc/apt/sources.list
+   51  apt install Jenkins
+   52  java --version
+   53  ls -l
+   54  ./setup-Jenkins.sh
+   55  maven --version
+   56  sudo nano /etc/apt/sources.list
+   57  apt install Jenkins
+   58  sudo nano /etc/apt/sources.list
+   59  apt install Jenkins
+   60  sudo nano /etc/apt/sources.list
+   61  sudo apt-get update
+   62  cd
+   63  exit
+   64  sudo apt-get update
+   65  wget -qO - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -
+   66  echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+   67  sudo apt-get update
+   68  sudo apt-get install jenkins
+   69  sudo systemctl start jenkins
+   70  sudo systemctl status jenkins
+   71  cd /tmp ; sudo wget http://apachemirror.wuchna.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+   72  cd /tmp ; sudo tar -xzf apache-maven-3.6.3-bin.tar.gz -C /opt
+   73  cd
+   74  sudo echo "MAVEN_HOME=\"/opt/apache-maven-3.6.3\"" >> /etc/profile
+   75  sudo echo "JAVA_HOME=\"/usr/lib/jvm/java-8-openjdk-amd64\"" >> /etc/profile
+   76  sudo echo "PATH=\$JAVA_HOME/bin:\$MAVEN_HOME/bin:\$PATH" >> /etc/profile
+   77  source /etc/profile
+   78  cd /var/lib/jenkins/secrets
+   79  ls -l
+   80  cat initialAdminPassword
+   81  mvn --versioon
+   82  mvn --version
+   83  echo $JAVA_HOME
+   84  echo $MAVEN_HOME
+   85  cd
+   86  cd labs
+   87  cd docker
+   88  ls -l
+   89  cd install/
+   90  ls -l
+   91  ./installDocker.sh
+   92  docker -v
+   93  cd
+   94  git init
+   95  jenkins user
+   96  cd /var/lib/jenkins
+   97  ls -l
+   98  cd users
+   99  ls -l
+  100  cat user.xml
+  101  cat users.xml
+  102  cd
+  103  su -jenkins
+  104  su - jenkins
+  105  cd /var/lib/jenkins
+  106  docker ps
+  107  cd /var/lib/docker
+  108  ls -l
+  109  cd image
+  110  ls -l
+  111  cd ..
+  112  ls -a
+  113  cat /etc/password
+  114  cd
+  115  cd /etc
+  116  ls -l
+  117  cat passwd
+  118  ls -l
+  119  cat /etc/group
+  120  cd
+  121  cd /var/lib/jenkins
+  122  sudo usermod -aG docker jenkins
+  123  su - jenkins
+  124  docker ps
+  125  ls -l
+  126  cd ..
+  127  docker
+  128  cd docker
+  129  ls -l
+  130  cd ..
+  131  cd jenkins
+  132  ls -l
+  133  kubectl get ctl
+  134  cd
+  135  cd labs
+  136  cd kube
+  137  ls -l
+  138  cd
+  139  cd labs
+  140  cd kube/
+  141  cd install/
+  142  ls -l
+  143  docker -v
+  144  echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+  145  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  146  sudo apt-get update ; clear
+  147  sudo apt-get install -y kubectl
+  148  kubectl get nodes
+  149  cd
+  150  hostname -i
+  151  logotu
+  152  exit
+  153  cd labs
+  154  cd aws
+  155  ls -l
+  156  ./setup-user.sh
+  157  exit
+  158  hostname -i
+  159  .kube
+  160  c tmp
+  161  cd /tmp
+  162  ls -l
+  163  cd /va/lib/jenkins
+  164  cd
+  165  cd/var/lib
+  166  cd /var
+  167  cd lin
+  168  cd linb
+  169  cd lib
+  170  cd jenkins/
+  171  ls -l
+  172  11 temp
+  173  cd
+  174  11 tmp
+  175  11 /tmp
+  176  cd /var/libjenkins/
+  177  cd /var/lib/jenkins/
+  178  mkdir .kube
+  179  cd .kube
+  180  mv /tmp/config
+  181  mv /tmp/config .
+  182  ls -l
+  183  cd ..
+  184  ls -ld .kube/
+  185  chown -R jenkins:jenkins .kube/
+  186  ls -ld .kube/
+  187  cd .kube
+  188  ls -ls
+  189  history
+  190  la-l
+  191  la -l
+  192  cd .kune
+  193  cd /
+  194  cd .kube
+  195  echo $JAVA_HOME
+  196  JAVA --VERSION
+  197  java --version
+  198  cd
+  199  java _version
+  200  java --version
+  201  java -version
+  202  echo $mvn_HOME
+  203  echo $mvn_home
+  204  echo $MAVEN_HOME
+  205  echo $DOCKER_HOME
+  206  cd labs
+  207  cd
+  208  cd /
+  209  cd var
+  210  cd lins
+  211  cd libs
+  212  cd lib
+  213  cd jenkins/
+  214  ls -l
+  215  cd workspace
+  216  ls -l
+  217  cd package/
+  218  ls -l
+  219  cd
+  220  su -jenkins
+  221  su - jenkins
+  222  ps -ef | grep addressbook
+  223  find . - addressbook
+  224  readlink -f foo/addressbook
+  225  find . - addressbook
+  226  ps -ef | grep addressbook
+  227  locate "*.addressbook"
+  228  kubectl get pods
+  229  su - jenkins
+  230  cd .kube
+  231  ls -l
+  232  cd
+  233  cd/tmp
+  234  cd /tmp
+  235  ls -l
+  236  cd
+  237  cd /va/lib/
+  238  cd /
+  239  cd var
+  240  cd lib
+  241  cd jun
+  242  cd jenki
+  243  ls -l
+  244  cd jenkins/
+  245  la -l
+  246  cd .kube
+  247  ls -l
+  248  mv /tmp/config .
+  249  ls -l
+  250  ls -ld .kube/
+  251  cd
+  252  cd /var
+  253  cd lib
+  254  cd jenkins/
+  255  ls -ld .kube/
+  256  du -jenkins
+  257  su - jenkins
+  258  cd
+  259  ls -ld .kube/
+  260  chown -R jenkins:jenkins .kube/
+  261  su - jenkins
+  262  chown -R jenkins:jenkins .kube/
+  263  ls -ld .kube/
+  264  cd /var
+  265  cd linb
+  266  cd lib
+  267  cd jenkins/
+  268  ls ld .kube/
+  269  ls -l
+  270  chown -R jenkins:jenkins .kube/
+  271  su - jenkins
+  272  cd
+  273  cd /var/lib
+  274  cd docker
+  275  ls -l
+  276  docker -v
+  277  cd /var/lib/jenkins/workspace/package
+  278  ls -l
+  279  cd Dockerfile
+  280  cccccccccccccccccccccccccccc
+  281  cd deploy
+  282  ls -l
+  283  cat deploy.yml
+  284  ./sampleapp-deploy-k8s.yml
+  285  cd ..
+  286  cd target/]
+  287  cd target/
+  288  ls -l
+  289  cd
+  290  cd /var/lib
+  291  ls -l
+  292  cp /var/lib/jenkins/workspace/package/target/addressbook.war .
+  293  ls -l
+  294  mkdir docker
+  295  cd docker
+  296  cp /var/lib/addressbook.war .
+  297  cd /var
+  298  cd lib
+  299  cd jenkins/
+  300  ls -l
+  301  cd work
+  302  cd workspace/
+  303  ls -l
+  304  cd package/
+  305  ls -l
+  306  cat Dockerfile
+  307  cd ..
+  308  ls -l
+  309  cp /var/lib/jenkins/workspace/package/Dockerfile .
+  310  ls -l
+  311  cd package/
+  312  docker build -f Dockerfile -t rizzobrit/addressbook .
+  313  docker build ?
+  314  docker build --help
+  315  docker build -f Dockerfile
+  316  docker build -f /var/lib/jenkins/workspace/package/Dockerfile
+  317  docker build -f
+  318  docker build -f /var/lib/jenkins/workspace/package/Dockerfile
+  319  docker build -f /var/lib/jenkins/workspace/package/Dockerfile .
+  320  ls -l
+  321  cat Dockerfile
+  322  docker build -f Dockerfile -t lerndevops/addressbook .
+  323  systemctl restart docker
+  324  docker build -f Dockerfile -t lerndevops/addressbook .
+  325  cd/var/lib/jenkins/workspace/Deploy-K8S
+  326  cd /var/lib/jenkins/workspace/Deploy-K8S
+  327  ls -l
+  328  cd ..
+  329  ls -l
+  330  cd Deploy-K8S/
+  331  cd
+  332  cd labs
+  333  cd
+  334  cd /var/lib
+  335  cd jenkins
+  336  ls -l
+  337  cd workspace/
+  338  ls -l
+  339  kubectl apply -f "addressbook-deploy-k8s.yml" --validate=false
+  340  history
+  341  systemctl restart docker
+  342  kubectl apply -f "addressbook-deploy-k8s.yml"
+  343  kubectl apply -f "addressbook-deploy-k8s.yml" --validate=false
+  344  ls -l
+  345  kubectl apply --help
+  346  kubectl apply -f --help
+  347  kubectl apply -f https://github.com/rizzobrit/DevOpsClassCodes.git "addressbook-deploy-k8s.yml" --validate=false"
+  348  kubectl apply -f https://github.com/rizzobrit/DevOpsClassCodes.git "addressbook-deploy-k8s.yml"
+  349  kubectl apply -f "addressbook-deploy-k8s.yml" --validate=false
+  350  cd
+  351  cd labs
+  352  ls -l
+  353  cd jenkins/
+  354  ls -l
+  355  cd
+  356  git clone https://github.com/rizzobrit/DevOpsClassCodes.git
+  357  ls -l
+  358  cd dev
+  359  ]c
+  360  cd Devops
+  361  cd DevOpsClassCodes/
+  362  ls -l
+  363  cat addressbook-deploy-k8s.yml
+  364  pwd
+  365  ls -l
+  366  cd /var/lib/jenkins
+  367  ls -l
+  368  cd workspace/
+  369  kubectl apply -f /root/DevOpsClassCodes "addressbook-deploy-k8s.yml" --validate=false
+  370  kubectl apply -h
+  371  cp /root/DevOpsClassCodes/ addressbook-deploy-k8s.yml .
+  372  cp /root/DevOpsClassCodes/addressbook-deploy-k8s.yml .
+  373  kubectl apply -f /root/DevOpsClassCodes "addressbook-deploy-k8s.yml" --validate=false
+  374  kubectl apply -f "addressbook-deploy-k8s.yml" --validate=false
+  375  ls -l
+  376  vi addressbook-deploy-k8s.yml
+  377  kubectl apply -f "addressbook-deploy-k8s.yml" --validate=false
+  378  kubectl apply -f "addressbook-deploy-k8s.yml"
+  379  kubectl apply -f "addressbook-deploy-k8s.yml" --validate=false
+  380  c
+  381  cd
+  382  cd $WORKSPACE
+  383  cd $workspace
+  384  cd /var/lib/jenkins/workspace
+  385  ls -l
+  386  vi addressbook-deploy-k8s.yml
+  387  kubectl
+  388  kubectl get pods
+  389  kubectl get nodes
+  390  cd
+  391  kubectl get nodes
+  392  kubectl
+  393  kubectl get --help
+  394  kubectl get pods
+  395  kubectl get nodes
+  396  history
+  397  #
+  398  su - jenkins
+  399  cd /var/lib/jenkins/workspace/
+  400  kubectl apply -f "addressbook-deploy-k8s.yml" --validate=false
+  401  jenkins -v
+  402  jenkins -version
+  403  ls -l
+  404  cd labs
+  405  cd jenkins
+  406  jenkins --version
+  407  jenkins -version
+  408  hostname -i
+  409  cd /tmp ; sudo wget http://apachemirror.wuchna.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+  410  cd /tmp ; sudo tar -xzf apache-maven-3.6.3-bin.tar.gz -C /opt
+  411  sudo echo "MAVEN_HOME=\"/opt/apache-maven-3.6.3\"" >> /etc/profile
+  412  sudo echo "JAVA_HOME=\"/usr/lib/jvm/java-8-openjdk-amd64\"" >> /etc/profile
+  413  sudo echo "PATH=\$JAVA_HOME/bin:\$MAVEN_HOME/bin:\$PATH" >> /etc/profile
+  414  source /etc/profile
+  415  c
+  416  dcd /opt
+  417  cd
+  418  cd /
+  419  cd opt
+  420  mvn --version
+  421  echo $java_home
+  422  echo $Java_home
+  423  echo $JAVA_HOME
+  424  cd
+  425  cd labs
+  426  cd docker
+  427  ls -l
+  428  cd install/
+  429  ls -l
+  430  ./installDocker.sh
+  431  docker .v
+  432  docker -v
+  433  cd
+  434  docker ps
+  435  docker images
+  436  su - jenkins
+  437  sudo su -
